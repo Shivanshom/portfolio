@@ -754,6 +754,10 @@ video {
   height: 100%;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .max-h-\[400px\]{
   max-height: 400px;
 }
@@ -929,6 +933,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -990,6 +998,14 @@ video {
 
 .pt-48{
   padding-top: 12rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .text-center{
@@ -1304,6 +1320,26 @@ body,
 
   .sm\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:before\:top-\[-100px\]::before{
+    content: var(--tw-content);
+    top: -100px;
+  }
+
+  .sm\:before\:-ml-\[90px\]::before{
+    content: var(--tw-content);
+    margin-left: -90px;
+  }
+
+  .sm\:before\:h-\[100px\]::before{
+    content: var(--tw-content);
+    height: 100px;
+  }
+
+  .sm\:before\:w-\[100px\]::before{
+    content: var(--tw-content);
+    width: 100px;
   }
 }
 
